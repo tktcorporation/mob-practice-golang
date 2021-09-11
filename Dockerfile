@@ -11,6 +11,10 @@ RUN apt-get update && \
 
 ENV LC_ALL=C.UTF-8
 
+WORKDIR /go/src/github.com/
+
 COPY  . .
 
-# CMD [ "/bin/sh",  "-c", "cargo run" ]
+RUN cd hi && pwd && go build
+
+CMD [ "/bin/sh",  "-c", "/go/src/github.com/hi/hi" ]
