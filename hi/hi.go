@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"example.com/greetings"
+	"github.com/tktcorporation/mob-practice-golang/greetings"
 )
 
 func main() {

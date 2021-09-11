@@ -1,4 +1,4 @@
-module example/hello
+module github.com/tktcorporation/mob-practice-golang/hello
 
 go 1.17
 
