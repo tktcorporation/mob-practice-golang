@@ -11,3 +11,8 @@ services:
     volumes:
       - .:/go/src/github.com:cached
     tty: true
+  executor:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: build-env
