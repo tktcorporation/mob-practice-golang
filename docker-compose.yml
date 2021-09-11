@@ -5,9 +5,9 @@ services:
       context: .
       dockerfile: ./Dockerfile
       target: build-env
-    working_dir: /workspace
+    working_dir: /go/src/github.com
     environment:
       - USER=$USER
     volumes:
-      - .:/workspace:cached
+      - .:/go/src/github.com:cached
     tty: true
