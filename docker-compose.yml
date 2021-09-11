@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: build-env
+    working_dir: /workspace
+    environment:
+      - USER=$USER
+    volumes:
+      - .:/workspace:cached
+    tty: true
