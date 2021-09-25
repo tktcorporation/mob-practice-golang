@@ -5,11 +5,11 @@ services:
       context: .
       dockerfile: ./Dockerfile
       target: build-env
-    working_dir: /go/src/github.com
+    working_dir: /go/src/github.com/tktcorporation/mob-practice-golang
     environment:
       - USER=$USER
     volumes:
-      - .:/go/src/github.com:cached
+      - .:/go/src/github.com/tktcorporation/mob-practice-golang:cached
     tty: true
   executor:
     build:
